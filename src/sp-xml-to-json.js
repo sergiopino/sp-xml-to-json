@@ -7,7 +7,7 @@ const xml = process.argv[2];
 
 // If no XML input was provided, show a usage message
 if (!xml) {
-    console.log('Usage: xml-to-json <xml>');
+    console.log('Usage: sp-xml-to-json <xml>');
     process.exit(1);
 }
 

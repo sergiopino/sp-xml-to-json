@@ -2,9 +2,9 @@
   "name": "sp-xml-to-json",
   "version": "1.0.0",
   "description": "Converts XML to JSON",
-  "main": "sp-xml-to-json.js",
   "scripts": {
-    "test": "jest"
+    "test": "jest",
+    "build": "babel src -d dist"
   },
   "repository": {
     "type": "git",
@@ -29,9 +29,13 @@
     "xml2js": "^0.4.23"
   },
   "devDependencies": {
+    "@babel/cli": "^7.16.0",
+    "@babel/core": "^7.16.0",
+    "@babel/preset-env": "^7.16.0",
+    "babel-jest": "^27.4.5",
     "jest": "^27.4.7"
   },
   "bin": {
-    "sp-xml-to-json": "./sp-xml-to-json.js"
+    "sp-xml-to-json": "./dist/sp-xml-to-json.js"
   }
 }
